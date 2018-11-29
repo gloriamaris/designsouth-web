@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { RegistrationFormComponent } from './views/registration-form/registration-form.component';
+import { ParticipantsComponent } from './views/participants/participants.component';
 
 const routes: Routes = [
   {
@@ -10,7 +11,11 @@ const routes: Routes = [
   {
     path: 'registration',
     component: RegistrationFormComponent
-  }
+  },
+  {
+    path: 'participants',
+    component: ParticipantsComponent
+  },
 ];
 
 @NgModule({

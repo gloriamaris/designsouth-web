@@ -10,6 +10,7 @@ import { HeaderComponent } from './views/header/header.component';
 import { FooterComponent } from './views/footer/footer.component';
 import { RegistrationFormComponent } from './views/registration-form/registration-form.component';
 import { ThankYouComponent } from './views/thank-you/thank-you.component';
+import { ParticipantsComponent } from './views/participants/participants.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ThankYouComponent } from './views/thank-you/thank-you.component';
     HeaderComponent,
     FooterComponent,
     RegistrationFormComponent,
-    ThankYouComponent
+    ThankYouComponent,
+    ParticipantsComponent
   ],
   imports: [
     BrowserModule,
