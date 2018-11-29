@@ -1,0 +1,23 @@
+$ds-black: #131311;
+$ds-green: #276958;
+$ds-yellow: #F7D166;
+$ds-red: #F41E25;
+$ds-gray: #818181;
+$ds-white: #fff;
+$ds-brown: #242420;
+
+
+body {
+  background-color: $ds-white;
+  color: $ds-green;
+}
+
+.bg-color-reg {
+  background-color: $ds-black;
+}
+
+.btn-ds-green {
+  color: $ds-black;
+  border-color: darken($ds-yellow, 5%);
+  background-color: $ds-yellow;
+}
