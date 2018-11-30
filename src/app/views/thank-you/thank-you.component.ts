@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { fadeAnimation } from '../../animations/fade-animation';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-thank-you',
@@ -8,9 +9,12 @@ import { fadeAnimation } from '../../animations/fade-animation';
   animations: [fadeAnimation]
 })
 export class ThankYouComponent implements OnInit {
+  public isHomeUrl: boolean;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.isHomeUrl = (this.router.url === '/');
+  }
 
 }
