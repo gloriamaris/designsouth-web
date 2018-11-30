@@ -8,8 +8,33 @@ $ds-brown: #242420;
 
 
 body {
-  background-color: $ds-white;
-  color: $ds-green;
+  background-color: $ds-brown;
+  color: $ds-yellow;
+  .form-group {
+    input {
+      border-radius: 0;
+      background: $ds-black;
+      color: $ds-yellow;
+      border: 1px solid #111;
+      &:focus {
+        background: #000;
+        border: 1px solid $ds-yellow;
+        color: $ds-yellow;
+      }
+    }
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: rgba(255,255,255,.2);
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+      color: rgba(255,255,255,.2);
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+      color: rgba(255,255,255,.2);
+    }
+    :-moz-placeholder { /* Firefox 18- */
+      color: rgba(255,255,255,.2);
+    }
+  }
 }
 
 .bg-color-reg {

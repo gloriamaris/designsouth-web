@@ -1,10 +1,7 @@
 <div class="container">
-  <hr/>
-
   <app-thank-you *ngIf="success"></app-thank-you>
-
-  <div class="col-md-12" *ngIf="!success">
-    <h2 class="text-center">REGISTRATION FORM</h2>
+  <div class="col-md-8 offset-md-2" *ngIf="!success">
+    <h2 class="mt-2">REGISTRATION FORM</h2>
     <h5 class="text-danger" *ngIf="hasError">Something went wrong. Please try again later.</h5>
 
     <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
@@ -30,7 +27,7 @@
         </div>
       </div>
       <div class="text-center">
-        <button type="submit" class="btn btn-ds-submit btn-lg pl-5 pr-5">Submit</button>
+        <button type="submit" class="btn btn-block btn-ds-submit btn-lg pl-5 pr-5">Submit</button>
       </div>
     </form>
   </div>
